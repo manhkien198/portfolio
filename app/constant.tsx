@@ -60,9 +60,15 @@ export const SOCIAL_NETWORKS = [
 ];
 export const WORK_EXPERIENCE: CardProps[] = [
     {
-        period: '2022 - Present',
+        period: '2024 - Present',
         title: 'Frontend Developer',
-        desc: 'Worked on-site for a bank to develop a user-friendly web application tailored for tellers. Utilized Angular and Angular Material to implement responsive and intuitive user interfaces, ensuring seamless interaction with banking systems and enhancing operational efficiency. Collaborated with teams to utilize SharePoint, Angular, and React.js in the development of a custom CMS application designed specifically for exceptional businesses. This application served multiple high-profile clients, such as Nestlé, BuildCorp and Ofekpoint, providing tailored solutions to meet their unique business needs.',
+        desc: 'Participated in the development of the IDO Web App using Angular and Backbase, supporting bank tellers in delivering customer services at branches. Developed key features for the Payment Agent Web App using Vue.js, enabling effective management of agency branches, partners, and related operations. Contributed to the CRM Web App, building dashboards and reports to help Relationship Managers (RMs) gain customer insights, manage tasks, and streamline workflows.',
+        technologies: ['Angular', 'Backbase', 'Vue', 'Angular Material'],
+    },
+    {
+        period: '2022 - 2024',
+        title: 'Frontend Developer',
+        desc: 'Worked on-site for seabank to develop a user-friendly web application tailored for tellers. Utilized Angular and Angular Material to implement responsive and intuitive user interfaces, ensuring seamless interaction with banking systems and enhancing operational efficiency. Developed and configured multiple CMS projects using SharePoint, Angular, and React.js for various high-profile clients, including Nestlé, Ofekpoint, and BuildCorp. As a Frontend Developer, I customized solutions to meet specific business needs, focusing on implementing new features, refactoring code, and maintaining the system. Collaborated closely with cross-functional teams to ensure the delivery of high- quality, user-friendly CMS applications that enhanced client operations and user experience.',
         technologies: ['Angular', 'Material UI', 'Sharepoint', 'React'],
     },
     {
