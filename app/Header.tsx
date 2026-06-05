@@ -5,11 +5,15 @@ import { NAV_ITEMS, SOCIAL_NETWORKS } from './constant';
 
 const Header = () => {
     const [hash, setHash] = useState('');
+
     useEffect(() => {
         const handleHashChange = () => {
             setHash(window.location.hash);
         };
+
+        handleHashChange();
         window.addEventListener('hashchange', handleHashChange);
+
         return () => {
             window.removeEventListener('hashchange', handleHashChange);
         };

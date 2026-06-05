@@ -5,58 +5,61 @@ import MainContent from './MainContent';
 
 export default function Portfolio() {
     useEffect(() => {
-        handleFlashLight();
-        const navItem = document.querySelector(`a[href="#about"]`);
-        navItem?.classList.add('active');
-        window.addEventListener('resize', handleFlashLight);
+        const main = document.querySelector('main');
+        const light = document.getElementById('light');
         const sections = document.querySelectorAll('section');
+
+        const setActiveHash = (hash: string) => {
+            document.querySelectorAll('a[href^="#"]').forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === hash);
+            });
+        };
+
+        const handleMouseMove = (e: MouseEvent) => {
+            if (!light) return;
+            const { clientX, clientY } = e;
+            light.style.background = `radial-gradient(600px at ${clientX}px ${clientY}px, rgba(29, 78, 216, 0.25), transparent 100%)`;
+        };
+
+        const handleResize = () => {
+            if (!main) return;
+
+            if (window.innerWidth > 1024) {
+                main.addEventListener('mousemove', handleMouseMove);
+                return;
+            }
+
+            main.removeEventListener('mousemove', handleMouseMove);
+            if (light) {
+                light.style.background = '';
+            }
+        };
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    const section = entry.target;
-                    window.location.hash = section.id;
+                    const hash = `#${entry.target.id}`;
+                    window.history.replaceState(null, '', hash);
+                    setActiveHash(hash);
                 }
             },
             { rootMargin: '0px', threshold: 0.5 }
         );
-        sections.forEach((section) => {
-            observer.observe(section);
-        });
+
+        setActiveHash(window.location.hash || '#about');
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        sections.forEach((section) => observer.observe(section));
+
         return () => {
-            window.removeEventListener('resize', handleFlashLight);
-            // window.removeEventListener('scroll', throttle(handleScroll, 200));
-            sections.forEach((section) => {
-                observer.unobserve(section);
-            });
+            window.removeEventListener('resize', handleResize);
+            if (main) {
+                main.removeEventListener('mousemove', handleMouseMove);
+            }
+            observer.disconnect();
         };
     }, []);
-    const handleFlashLight = () => {
-        const main = document.getElementsByTagName('main')[0];
-        if (window.innerWidth > 1024) {
-            // window.addEventListener('scroll', handleScroll);
-            main.addEventListener('mousemove', function (e) {
-                const clientX = e.clientX;
-                const clientY = e.clientY;
-                const light = document.getElementById('light');
-                if (light) {
-                    light.style.background = `radial-gradient(600px at ${clientX}px ${clientY}px, rgba(29, 78, 216, 0.25), transparent 100%)`;
-                }
-            });
-        }
-    };
-    // const handleScroll = () => {
-    //     const scrollY = window.scrollY;
-    //     const sections = document.querySelectorAll('section');
-    //     sections.forEach((section) => {
-    //         const sectionTop = section.offsetTop;
-    //         const navItem = document.querySelector(`a[href="#${section.id}"]`);
-    //         if (scrollY >= sectionTop - 100 && scrollY < sectionTop + section.offsetHeight) {
-    //             navItem?.classList.add('active');
-    //         } else {
-    //             navItem?.classList.remove('active');
-    //         }
-    //     });
-    // };
+
     return (
         <main className='relative'>
             <div className='fixed inset-0 pointer-events-none transition' id='light'></div>
