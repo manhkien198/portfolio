@@ -25,7 +25,7 @@ const Header = () => {
                     <a href='/'>Kien Pham</a>
                 </h1>
                 <h2 className='mt-3 text-lg sm:text-xl font-medium tracking-tight text-slate-200'>
-                    Middle Frontend Engineer
+                    Frontend Engineer
                 </h2>
                 <p className='leading-normal mt-4 max-w-xs'>
                     I build pixel-perfect, engaging, and accessible digital experiences.
