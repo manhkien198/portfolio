@@ -15,25 +15,7 @@ const MainContent = () => {
                     </h2>
                 </div>
                 <p className='mb-4'>
-                    Dedicated frontend developer with{' '}
-                    <span className='font-bold text-white'>4 years of experience</span> specializing
-                    in <span className='font-bold text-white'>React.js</span> and{' '}
-                    <span className='font-bold text-white'>Angular</span>. Committed to delivering
-                    quality work and continuously improving skills in web development. Enthusiastic
-                    team player with a collaborative approach to problem-solving. Grateful for the
-                    opportunities to contribute to meaningful projects and eager to continue
-                    learning and growing in the field.
-                </p>
-                <p className='mb-4'>
-                    I have led the development of a booking platform that improved user engagement,
-                    and I contributed to redesigning an e-commerce website, significantly increasing
-                    user retention. I excel at problem-solving, ensuring high performance and
-                    scalability in all my projects.
-                </p>
-                <p>
-                    I am passionate about turning complex problems into intuitive interfaces and
-                    continuously learning to stay ahead in web development. Feel free to reach out
-                    for collaboration or any questions about my work.
+                    Results-oriented Frontend Developer with{' '}<span className='font-bold text-white'>6 years of experience</span>{' '}architecting and maintaining scalable web applications specializing in {' '}<span className='font-bold text-white'>React.js, Next.js, Vue.js, and Angular</span>{' '}
                 </p>
             </section>
             <section

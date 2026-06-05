@@ -62,31 +62,31 @@ export const WORK_EXPERIENCE: CardProps[] = [
     {
         period: '2024 - Present',
         title: 'Frontend Developer',
-        desc: 'Participated in the development of the IDO Web App using Angular and Backbase, supporting bank tellers in delivering customer services at branches. Developed key features for the Payment Agent Web App using Vue.js, enabling effective management of agency branches, partners, and related operations. Contributed to the CRM Web App, building dashboards and reports to help Relationship Managers (RMs) gain customer insights, manage tasks, and streamline workflows.',
-        technologies: ['Angular', 'Backbase', 'Vue', 'Angular Material'],
+        desc: 'Developed and optimized scalable web applications across banking and CRM domains. Spearheaded AI-driven chat interfaces with real-time data visualization and streamlined core banking/agency management systems using Angular, Vue.js, Backbase, and Tailwind CSS to enhance operational productivity.',
+        technologies: ['Angular', 'Backbase', 'Vue', 'Angular Material', 'AI'],
     },
     {
         period: '2022 - 2024',
         title: 'Frontend Developer',
-        desc: 'Worked on-site for seabank to develop a user-friendly web application tailored for tellers. Utilized Angular and Angular Material to implement responsive and intuitive user interfaces, ensuring seamless interaction with banking systems and enhancing operational efficiency. Developed and configured multiple CMS projects using SharePoint, Angular, and React.js for various high-profile clients, including Nestlé, Ofekpoint, and BuildCorp. As a Frontend Developer, I customized solutions to meet specific business needs, focusing on implementing new features, refactoring code, and maintaining the system. Collaborated closely with cross-functional teams to ensure the delivery of high- quality, user-friendly CMS applications that enhanced client operations and user experience.',
+        desc: 'Engineered intuitive, responsive banking interfaces for SeABank using Angular and Material UI to improve teller efficiency. Delivered high-profile CMS solutions for clients like Nestlé and Ofekpoint by customizing SharePoint, Angular, and React.js architectures. Collaborated with cross-functional teams to refactor legacy codebases and ensure high-quality, user-centric application delivery.',
         technologies: ['Angular', 'Material UI', 'Sharepoint', 'React'],
     },
     {
         period: '2021 - 2022',
         title: 'Frontend Developer',
-        desc: 'Worked on multiple banking projects utilizing React.js, Angular, and Material-UI to develop robust and user-friendly applications. Designed and implemented user interfaces for banking applications. Optimized application performance to enhance user experience. Ensured cross-browser compatibility and responsiveness. Collaborated with backend developers to integrate APIs. Conducted code reviews and implemented best practices to maintain high-quality standards.',
+        desc: 'Developed robust banking applications using React.js and Angular, focusing on UI/UX excellence and cross-browser compatibility. Collaborated with backend teams for seamless API integration and optimized application performance. Conducted code reviews and enforced clean code standards to maintain project scalability.',
         technologies: ['React', 'Material UI', 'Angular', 'Typescript'],
     },
     {
         period: '2020 - 2021',
         title: 'Frontend Developer',
-        desc: 'Used Next.js, HTML5, CSS to build a website for booking flight tickets, hotels, and taxis. Implemented responsive design strategies to provide a seamless user experience on mobile phones, tablets, and desktop computers. Conducted research to identify and implement solutions tailored to the exceptional business needs of the website.',
+        desc: 'Built a comprehensive booking platform for flights, hotels, and taxis using Next.js. Implemented responsive design patterns to ensure a seamless cross-device user experience and researched custom technical solutions to meet unique business requirements.',
         technologies: ['Next.js', 'Ant Design', 'Typescript', 'React Hook Form', 'React Query'],
     },
     {
         period: 'May - Oct 2020',
         title: 'Frontend Developer',
-        desc: 'Collaborated with 6 other teams member to develope a web application for HR department using ReactJs and ANT design. Optimized the application for maximum speed and scalibity',
+        desc: 'Collaborated with a cross-functional team of 6 to develop an HR management web application. Utilized React.js and Ant Design to build modular components, focusing on optimizing application performance and long-term scalability.',
         technologies: ['React', 'Ant Design', 'Typescript'],
     },
 ];
